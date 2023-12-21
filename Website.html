@@ -64,6 +64,28 @@
             display: flex;
             align-items: center;
         }
+		.podcast-list {
+		list-style-type: none; /* Removes default list styling */
+		padding: 0; /* Removes default padding */
+		}
+
+		.podcast-list li {
+		margin-bottom: 10px; /* Spacing between list items */
+		}
+
+		.podcast-list table {
+		width: 100%; /* Table takes full width of the list item */
+		border-collapse: collapse; /* Collapses borders for a clean look */
+		}
+
+		.podcast-list img {
+		width: 50px; /* Adjust as needed */
+		height: auto; /* Keeps aspect ratio */
+		}
+
+.podcast-list .description {
+    color: white; /* Sets the description text color */
+}
         .category img {
             width: 50px;
             height: 50px;
@@ -135,24 +157,27 @@
         <!-- Curing the World? The Biotech Cosmos -->
         <div class="category">
             <h2><i>Curing the World?</i> The Biotech Cosmos</h2>
-            <ul>
-                <li>
-                    <a href="https://open.spotify.com/show/3qVFGJUL9ie4tfnuvyDGse?si=ad9cc9acc6a1430a" target="_blank">
-                        <img src="images/logoWomanEdit.png" alt="Podcast Image 4"> <b>The Long Run </b> <br>&nbsp;(drug discovery and development, clinical trials, biotech investment, and artificial intelligence)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://open.spotify.com/show/0I3MNubwZhrWlzLWBSsCk1?si=74f0a497961a4770" target="_blank">
-                        <img src="images/logoWomanEdit.png" alt="Podcast Image 4"> <b>I AM BIO </b> <br>&nbsp;(biotechnology and biopharma-related topics, including new innovations, breakthrough research, public policy, and industry trends)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://open.spotify.com/show/2PSL162R2s0zOwU5913Zv4?si=cd26eccd3ccb4072" target="_blank">
-                        <img src="images/logoWomanEdit.png" alt="Podcast Image 4"> <b>Biotech Startups Podcast </b> <br>&nbsp;(insights from first-time and serial entrepreneurs, experienced scientists and industry professionals, biotech investors)
-                    </a>
-                </li>
-                <!-- Add more podcasts here -->
-            </ul>
+		<ul class="podcast-list">
+			<li>
+				<table>
+				<!-- Repeat <tr>...</tr> for each podcast item -->
+				<tr>
+						<td><img src="images/logoWomanEdit.png" alt="Podcast Image"></td>
+						<td><a href="https://open.spotify.com/show/3qVFGJUL9ie4tfnuvyDGse?si=ad9cc9acc6a1430a"><b>The Long Run </b></a></td>
+						<td class="description">drug discovery and development, clinical trials, biotech investment, and artificial intelligence</td>
+					</tr>
+					<tr>
+						<td><img src="images/logoWomanEdit.png" alt="Podcast Image"></td>
+						<td><a href="https://open.spotify.com/show/0I3MNubwZhrWlzLWBSsCk1?si=74f0a497961a4770" target="_blank"><b>I AM BIO </b></a></td>
+						<td class="description">biotechnology and biopharma-related topics, including new innovations, breakthrough research, public policy, and industry trends</td>
+					</tr>
+  					<tr>
+						<td><img src="images/logoWomanEdit.png" alt="Podcast Image"></td>
+						<td><a href="https://open.spotify.com/show/2PSL162R2s0zOwU5913Zv4?si=cd26eccd3ccb4072" target="_blank"><b>Biotech Startups Podcast </b></a></td>
+						<td class="description">insights from first-time and serial entrepreneurs, experienced scientists and industry professionals, biotech investors</td>
+					</tr>          
+				</table>
+			</li>
         </div>
 
         <!-- Additional categories and podcasts can be added here -->
